@@ -43,18 +43,19 @@ brew install glfw glew glm
 ```
 
 🧩 Estrutura de Arquivos
-
+```bash
 📦 sierpinski-pyramid
 ├── main.cpp             # Código principal (setup OpenGL e loop de renderização)
 ├── shader.vert          # Vertex Shader
 ├── shader.frag          # Fragment Shader
 ├── sierpinski.geom      # Geometry Shader (gera o fractal)
 └── README.md            # Este arquivo
+```
 
 🚀 Como Compilar e Executar
 
 No terminal, navegue até o diretório do projeto e execute:
-
+```bash
 clang++ main.cpp -o sierpinski -std=c++17 \
 -I/opt/homebrew/opt/glew/include \
 -I/opt/homebrew/opt/glfw/include \
@@ -62,9 +63,10 @@ clang++ main.cpp -o sierpinski -std=c++17 \
 -L/opt/homebrew/opt/glew/lib \
 -L/opt/homebrew/opt/glfw/lib \
 -framework OpenGL -lglfw -lglew
+```
 
 Em seguida, execute o programa:
-
+```bash
 ./sierpinski
-
+```
 
